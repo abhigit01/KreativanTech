@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="loginform">
+        <form onsubmit="return mydata()" action="login.html">
+            <div class="welcome" , id="heading">
+                <h1>WELCOME</h1>
+            </div>
+
+            <div class="noaccount">
+                <p>don't have an account_</p>
+                <a href="signup.html" target="blank">
+                    <p>sign-up</p>
+                </a>
+            </div>
+
+            <div class="container">
+                <div class="user">
+                    <p class="label">user name</p>
+                </div>
+                <div class="bar">
+                    <input class="details box" type="text" name="user" id="user" placeholder=" enter your user name">
+                </div>
+            </div>
+            <div class="pass">
+                <p class="auth"> password</p>
+
+                <input type="text box" name="password" id="password" , placeholder="enter your password">
+            </div>
+
+            <div class="btn">
+                <input type="submit" name="" id="" value="login" onclick="mydata()">
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        function mydata()
+        {
+            var a=document.getElementById("user").value;
+            var a=document.getElementById("password").value;
+
+            if(a==""||b=="")
+            {
+                alert("All fields are mendatory");
+                return false;
+            }
+            else{
+                true;
+            }
+
+        }
+    </script>
+
 </body>
+
 </html>
